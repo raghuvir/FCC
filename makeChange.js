@@ -10,7 +10,7 @@
 //Column Reference:  0:Currency Name;1:Amount still in drawer; 2:Number of units added to cashOut; 3: denomination
       for(i=cid.length-1;i>=0;i--){  // loop through denominations
             j=0;
-            while(cid[i][3] <= changeDue  && cid[i][1] >= 0 ){
+            while(cid[i][3] <= changeDue  && cid[i][1] > 0 ){
                     j++; 
                     changeOut[i][2]++;
                     changeDue = changeDue - cid[i][3];
